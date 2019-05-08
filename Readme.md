@@ -1,11 +1,8 @@
 # Личный проект «Девайс»
 
 * Студент: [Юлия](https://up.htmlacademy.ru/htmlcss/25/user/991959).
-<<<<<<< HEAD
+
 * Наставник: [Виктория Коваленко](https://up.htmlacademy.ru/htmlcss/25/user/42638)
-=======
-* Наставник: `Неизвестно`.
->>>>>>> parent of aff1c55... Update Readme.md
 
 ---
 
