@@ -8,22 +8,42 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+          <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+              <defs>
+                  <style>
+                      .cls-1{fill-rule:evenodd}
+                  </style>
+              </defs>
+              <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
+          </svg>
         </a>
-      <!--Форма поиска-->
-        <ul class="user-navigation">
-          <li><a class="login-link" href="#">Войти</a></li>
+        <section class="user-navigation">
+          <form class="search">
+            <label>
+              <input type="search" name="search" placeholder="Поиск по сайту">
+            </label>
+          <button type="submit">Найти</button>
+        </form>
+        <ul class="user-navigation-list">
+          <li><a class="login-link" href="login.html">Выйти</a></li>
           <li><a class="compare" href="#">Сравнить</a></li>
-        </ul>
-        <ul>
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
+        </section>
         <ul class="site-navigation">
-          <li class="site-navigation-current">
+          <li class="site-navigation-item-current">
             <a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="service.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+            <ul class="catalog-submenu">
+              <li class="submenu-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="submenu-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="submenu-item"><a href="#">Экшн-камеры</a></li>
+              <li class="submenu-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="submenu-item"><a href="#">Умные часы</a></li>
+              <li class="submenu-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          <li class="site-navigation-item"><a href="delivery.html">Доставка</a></li>
+          <li class="site-navigation-item"><a href="service.html">Гарантия</a></li>
+          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -36,11 +56,65 @@
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
-        <!--Форма-->
+        <form class="filter" action="#" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            от 0<input type="range" min="0">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
+                <label for="filter-black">Белый</label>
+              </li>
+                <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+                <label for="filter-black">Синий</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="filter-red" checked>
+                <label for="filter-black">Красный</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="filter-pink">
+                <label for="filter-black">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="bluetooth" value="yes" id="filter-bluetooth-yes" checked>
+                <label for="filter-bluetooth-yes">Есть</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio"
+                type="radio" name="bluetooth" value="no" id="filter-bluetooth-no">
+                <label for="filter-bluetooth-no">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Показать</button>
+        </form>
       </section>
       <section class="sort">
         <h2>Сортировка:</h2>
-        <!--Форма-->
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">По возрастанию</a></li>
+          <li><a href="#">По убыванию</a></li>
+        </ul>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список селфи-палок</h2>
@@ -50,6 +124,8 @@
               <a href="catalog-item.html">Любительская селфи-палка
               </a>
             </h3>
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -64,6 +140,8 @@
               <a href="catalog-item.html">Профессиональная селфи-палка
               </a>
             </h3>
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -78,6 +156,8 @@
               <a href="catalog-item.html">Непотопляемая селфи-палка
               </a>
             </h3>
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
@@ -92,6 +172,8 @@
               <a href="catalog-item.html">Селфи-палка «Следуй за мной»
               </a>
             </h3>
+            <a href="#">В корзину</a>
+            <a href="#">Добавить к сравнению</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a>
@@ -102,15 +184,24 @@
         </li>
         </ul>
         <ul class="pagination-list">
+          <li class="pagination-item"><a>Назад</a></li>
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Вперед</a></li>
         </ul>
       </section>
     </main>
     <footer class="main-footer">
       <a class="main-footer-logo">
-        <img src="img/index-logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
+            <defs>
+                <style>
+                    .cls-1{fill-rule:evenodd}
+                </style>
+            </defs>
+            <path id="_-e-logo" d="M-.151.702v33.6h13.532a15.72 15.72 0 0 0 11.72-4.824 16.458 16.458 0 0 0 4.712-11.976 16.458 16.458 0 0 0-4.712-11.976A15.723 15.723 0 0 0 13.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 0 1 6.5 2.568 9.407 9.407 0 0 1 2.489 6.84 9.406 9.406 0 0 1-2.489 6.84 8.642 8.642 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 0 0 6.041-5.688l-6.67-3.84a7.482 7.482 0 0 1-3.165 3.024 9.87 9.87 0 0 1-4.664 1.1 9.595 9.595 0 0 1-7.177-2.736 9.909 9.909 0 0 1-2.682-7.248 9.909 9.909 0 0 1 2.682-7.248 9.595 9.595 0 0 1 7.177-2.736 9.897 9.897 0 0 1 4.639 1.08 7.592 7.592 0 0 1 3.19 3.048l6.67-3.84a15.873 15.873 0 0 0-6.09-5.688 17.42 17.42 0 0 0-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" class="cls-1" data-name="-e-logo"/>
+        </svg>
       <p class="address">г. Москва, ул. Строителей, 15</p>
       <p class="phone">
         <a href="tel:+74954959595">+7 495 495-95-95</a>
@@ -122,10 +213,8 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="footer-user-navigation">
-          <li><a class="login-link" href="#">Войти</a></li>
+          <li><a class="login-link" href="index.html">Выйти</a></li>
           <li><a class="compare" href="#">Сравнить</a></li>
-        </ul>
-        <ul>
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
       </section>
