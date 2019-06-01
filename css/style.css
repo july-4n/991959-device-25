@@ -339,19 +339,21 @@ list-style: none;
 .pagination-list {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  list-style: none;
-  margin: 0;
   padding: 0;
-}
-.numbers {
-  display:flex;
-  list-style: none;
   margin: 0;
-  padding: 0;
+  list-style: none;
 }
 .pagination-item {
-  padding: 30px;
+  margin: 30px;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 90px;
+  margin-top: 30px;
+  margin: 0;
+  padding: 0;
 }
 .pagination-item a {
   font-family: "Gilroyextrabold", Arial, sans-serif;
@@ -360,13 +362,6 @@ list-style: none;
   font-weight: 700;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-}
-.pagination-item-number a {
-  margin-right: 30px;
-}
-.number {
-  align-items: center;
-  display: flex;
 }
 .pagination-item-number a {
   font-family: "Gilroyextrabold", Arial, sans-serif;
