@@ -70,7 +70,7 @@ input [type="radio"].visually-hidden {
   opacity: 0.3;
 }
 .search-form {
-  overflow: hidden;
+  *overflow: hidden;
   width: 356px;
   white-space: nowrap;
 }
@@ -85,30 +85,24 @@ input [type="radio"].visually-hidden {
 .search-form input[type="search"]:focus {
   border-bottom: 2px solid #000000;
 }
-.search-form .find {
+.find {
   width: 85px;
   height: 50px;
   /*margin-left: 356px;*/
   margin-top: -48px;
   opacity: 0;
 }
-.search-form:hover .find {
-  background-color: #000000;
-  color: #ffffff;
-  opacity: 1;
-  margin-left: -90px;
-}
-.search-form:active .find {
-  background-color: #000000;
-  color: rgba(255, 255, 255, 0.3);
-}
 .search-form:focus .find {
+  border: 2px solid #000000;
   background-color: #f7e296;
-  color: #000000;
-  border: 1px solid #000000;
+
+
   opacity: 1;
   margin-left: -90px;
+
+
 }
+
 
 input[type="search"]::-webkit-input-placeholder {color:rgba(0, 0, 0, 0.3);}
 input::moz-placeholder                          {color:rgba(0, 0, 0, 0.3);}
