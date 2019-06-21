@@ -23,6 +23,12 @@
           </a>
           <section class="user-navigation">
             <form class="search-form" action="#" method="post">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+              <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
+              	c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
+              	 M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
+              </svg>
               <label>
                 <input type="search" name="search" placeholder="Поиск по сайту">
               </label>
@@ -87,7 +93,7 @@
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+        <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <div class="columns-filter-catalog">
         <section class="filters">
@@ -109,9 +115,9 @@
                 </span>
 
               </div>
-              <!--от 0<input type="range" min="0">-->
+
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Цвет</legend>
               <ul>
                 <li class="filter-option">
@@ -119,7 +125,7 @@
                   <label for="filter-black">Черный</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white" disabled>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
                   <label for="filter-white">Белый</label>
                 </li>
                 <li class="filter-option">
@@ -136,7 +142,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item">
               <legend>Bluetooth</legend>
               <ul>
                 <li class="filter-option">
@@ -151,7 +157,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-button button" type="submit">Показать</button>
+            <button class="filter-button" type="submit">Показать</button>
           </form>
         </section>
         <div class="catalog-columns">
@@ -163,13 +169,13 @@
              <li><a class="sort-link" href="#">По популярности</a></li>
             </ul>
             <ul class="sort-item-range">
-              <li class="sort-item-up gh">
-                <a href="#">
+              <li>
+                <a class="sort-item-up sort-item-active" href="#">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
-              <li class="sort-item-down gh">
-                <a href="#">
+              <li>
+                <a class="sort-item-down" href="#">
               <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
@@ -191,8 +197,10 @@
                   </h3>
                   <span class="catalog-item-price">500 руб.</span>
                 </div>
-                <a class="in-basket" href="#">В корзину</a>
-                <a class="in-compare" href="#">Добавить к сравнению</a>
+                <div class="actions">
+                  <a class="in-basket" href="#">В корзину</a>
+                  <a class="in-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-item">
                 <p class="catalog-item-image">
@@ -207,8 +215,10 @@
                   </h3>
                   <span class="catalog-item-price">1500 руб.</span>
                 </div>
+                <div class="actions">
                 <a class="in-basket" href="#">В корзину</a>
                 <a class="in-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-item">
                 <p class="catalog-item-image">
@@ -223,8 +233,10 @@
                   </h3>
                   <span class="catalog-item-price">2500 руб.</span>
                 </div>
+                <div class="actions">
                 <a class="in-basket" href="#">В корзину</a>
                 <a class="in-compare" href="#">Добавить к сравнению</a>
+                </div>
               </li>
               <li class="catalog-item">
                   <p class="catalog-item-image">
@@ -239,8 +251,10 @@
                     </h3>
                     <span class="catalog-item-price">4900 руб.</span>
                   </div>
+                  <div class="actions">
                   <a class="in-basket" href="#">В корзину</a>
                   <a class="in-compare" href="#">Добавить к сравнению</a>
+                  </div>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -252,7 +266,7 @@
                   <li class="pagination-item-number"><a href="#">3</a></li>
                 </ul>
               </li>
-              <li class="pagination-item"><a href="#">Вперед</a></li>
+              <li class="pagination-item text"><a href="#">Вперед</a></li>
             </ul>
           </section>
         </div>
@@ -359,7 +373,7 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </p>
     </div>
     </footer>
