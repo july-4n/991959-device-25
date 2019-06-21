@@ -24,6 +24,7 @@ body {
   text-transform: none;
 
   background-color: #ffffff;
+  counter-reset: section;
 }
 .container {
   width: 1160px;
@@ -342,13 +343,10 @@ input:ms-input-placeholder                             {color:rgba(0, 0, 0, 1);}
 
   background-color: #ffffff;
 }
-ul {
-  counter-reset: section;
-}
 
 .slider-item::after {
   counter-increment: section;
-  content: "0" counter(section) " ";
+  content: counter(section);
 
   position: absolute;
   left: 934px;
@@ -724,22 +722,8 @@ margin-top: 180px;
 
   background-color: #000000;
 }
-.slide-button:active::before .active-link  {
-  content: "";
 
-  position: absolute;
-  display: block;
-  width: 278px;
-  height: 40px;
-  z-index: -1;
-  top: -10%;
-  left: -25px;
 
-  background-color: #000000;
-}
-.{
-
-}
 .slide {
   display: none;
 }
