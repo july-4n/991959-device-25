@@ -70,40 +70,49 @@ input [type="radio"].visually-hidden {
   opacity: 0.3;
 }
 .search-form {
-  *overflow: hidden;
   width: 356px;
+  min-height: 49px;
   white-space: nowrap;
+  display: flex;
+  align-items: flex-end;
+
 }
-.search-form input[type="search"] {
+.search-field-input {
   font: inherit;
   border: none;
-  background-color: #f7e296;
+  background-color: transparent;
   padding-left: 20px;
   width: 336px;
-  height: 50px;
+  height: 49px;
+
+  margin: 0;
 }
-.search-form input[type="search"]:focus {
-  border-bottom: 2px solid #000000;
-}
-.find {
+.search-form-button {
   width: 85px;
-  height: 50px;
-  /*margin-left: 356px;*/
+  height: 49px;
+  text-align: center;
+  font: inherit;
   margin-top: -48px;
-  opacity: 0;
-}
-.search-form:focus .find {
+  background-color: transparent;
   border: 2px solid #000000;
-  background-color: #f7e296;
 
-
-  opacity: 1;
-  margin-left: -90px;
-
+  visibility: hidden;
+}
+.search-form-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.search-form-button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+ .search-field-input:focus {
+   border-bottom: 2px solid #000000;
+}
+.search-field-input:focus ~ .search-form-button, .search-form-button:active {
+    visibility: visible;
 
 }
-
-
 input[type="search"]::-webkit-input-placeholder {color:rgba(0, 0, 0, 0.3);}
 input::moz-placeholder                          {color:rgba(0, 0, 0, 0.3);}
 input:-moz-placeholder                          {color:rgba(0, 0, 0, 0.3);}
