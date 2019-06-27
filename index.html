@@ -23,14 +23,8 @@
           </a>
           <section class="user-navigation">
             <form class="search-form" action="#" method="post">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-              <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
-              	c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
-              	 M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
-              </svg>
-              <label></label>
-                <input class="search-field-input" type="search" name="search" placeholder="Поиск по сайту">
+                <label for="search-field"></label>
+                <input class="search-field-input" id="search-field" type="search" name="search" placeholder="Поиск по сайту">
 
             <button class="search-form-button" type="submit">Найти</button>
             </form>
@@ -106,25 +100,25 @@
           <i></i>
         </div>
         <ul class="slider-list">
-          <li class="slider-item">
+          <li class="slider-item selfie-stick">
             <h2>Делай селфи,<br> как Бен Стиллер!</h2>
-            <p class="slogan">Самая длинная палка для селфи доступна в нашем магазине.
+            <p class="slogan slogan-1">Самая длинная палка для селфи доступна в нашем магазине.
                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="slider-item-button button" href="#">Подробнее</a>
-            <table>
+            <table class="slider-table">
             <tr class="table-value">
               <td>8,5 м</td>
-              <td> 5 кг</td>
-              <td>Карбон</td>
+              <td class="weight"> 5 кг</td>
+              <td class="material">Карбон</td>
             </tr>
             <tr class="table-title">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
+              <td class="stick-lenght">Длина палки</td>
+              <td class="stick-weight">Вес палки</td>
+              <td class="stick-material">Материал</td>
             </tr>
           </table>
         </li>
-          <li class="slider-item">
+          <li class="slider-item fitness-bracelet">
             <h2>Худеем<br> правильно!</h2>
             <p class="slogan">Мотивирующие фитнес-браслеты помогут найти в себе силы
                не пропускать занятия и соблюдать диету.</p>
@@ -132,19 +126,19 @@
             <p class="duration">48 часов</p>
             <p class="product-characteristic">Без подзарядки</p>
           </li>
-          <li class="slider-item">
+          <li class="slider-item copter">
             <h2>Порхает как бабочка,<br> жалит как пчела!</h2>
             <p class="slogan">Этот обычный, на первый взгляд, квадрокоптер оснащен
                мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slider-item-button button" href="#">Подробнее</a>
-            <table>
+            <table class="slider-table">
             <tr class="table-value">
               <td>800 м</td>
-              <td> 50 м</td>
+              <td class="lenght-radius"> 50 м</td>
             </tr>
             <tr class="table-title">
-              <td>Длина полета</td>
-              <td>Радиус поражения</td>
+              <td class="fly-lenght">Дальность полета</td>
+              <td class="radius">Радиус поражения</td>
             </tr>
           </table>
           </li>
@@ -168,21 +162,21 @@
           </ul>
       </section>
 
-    <input class="service-slider" type="radio" id="product-1" name="toggle" chacked>
-    <input class="service-slider" type="radio" id="product-2" name="toggle">
-    <input class="service-slider" type="radio" id="product-3" name="toggle">
+    <input class="service-slider" type="radio" id="delivery-btn" name="service-toggle" checked>
+    <input class="service-slider" type="radio" id="warranty-btn" name="service-toggle">
+    <input class="service-slider" type="radio" id="credit-btn" name="service-toggle">
 
 <div class="service-wrapper">
     <section class="column-slider">
       <h2 class="visually-hidden">Сервис</h2>
         <ul class="slider-product-controls">
           <li class="button-service">
-            <a class="button-service slide-button active-link" href"#">
-              <label for="product-1">Доставка</label></a>
+            <a class="button-service slide-button current-button" href"#">
+              <label for="delivery-btn">Доставка</label></a>
             <a class="button-service slide-button" href"#">
-              <label for="product-2">Гарантия</label></a>
+              <label for="warranty-btn">Гарантия</label></a>
             <a class="button-service slide-button" href"#">
-              <label for="product-3">Кредит</label></a>
+              <label for="credit-btn">Кредит</label></a>
           </li>
        </ul>
     <section class="service">
@@ -254,9 +248,9 @@
       <div class="index-columns">
         <section class="info">
           <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть
+          <p class="choice">Огромный выбор гаджетов не оставит равнодушным гика, который есть
              в каждом из нас.</p>
-          <p >Мы можем доставить ваш товар в самые отдаленные точки
+          <p class="potential-delivery">Мы можем доставить ваш товар в самые отдаленные точки
              России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="info-transport-company">
             <li class="company-name">Деловые Линии</li>
@@ -267,7 +261,7 @@
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
              работоспособность покупки. Всякое бывает.</p>
           <a class="map" href="https://www.google.com/maps/place/Ulitsa+Stroiteley,+15,+Moskva,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618">
             <h3 class="visually-hidden">Карта</h3>
@@ -290,15 +284,15 @@
           </svg>
         </a>
         <ul class="footer-user-navigation">
-          <li><a class="login-link-icon">
+          <li><a class="footer-login-link-icon">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="13px" height="12px" viewBox="0 0 13 12" enable-background="new 0 0 13 12" xml:space="preserve">
             <path fill="#ffc600" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485
               C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
             </svg>
           </a></li>
-          <li><a class="login-link" href="index.html">Войти</a></li>
-          <li><a class="compare-icon">
+          <li><a class="footer-login-link" href="index.html">Войти</a></li>
+          <li><a class="footer-compare-icon">
             <svg  fill="#ffc600" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
             <rect x="8" y="2" width="1.984" height="8"/>
@@ -306,8 +300,8 @@
             <rect x="4" width="2" height="10"/>
             </svg>
           </a></li>
-          <li><a class="compare" href="#">Сравнить</a></li>
-          <li><a class="basket-nav-icon">
+          <li><a class="footer-compare" href="#">Сравнить</a></li>
+          <li><a class="footer-basket-icon">
             <svg fill="#ffc600" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
             <g>
@@ -321,17 +315,18 @@
             </g>
             </svg>
           </a></li>
-          <li><a class="basket" href="#">Корзина</a></li>
+          <li><a class="footer-basket" href="#">Корзина</a></li>
         </ul>
       </div>
-      <div class="index-adress-nav">
+      <div class="footer-index-adress">
         <p class="address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-navigation-item">
           <li class="footer-delivery"><a href="#">Доставка</a></li>
           <li class="footer-service"><a href="#">Гарантия</a></li>
           <li class="footer-contacts"><a href="#">Контакты</a></li>
         </ul>
-        <a class="phone" href="tel:+74954959595">+7 495 495-95-95</a>
+        <span class="tel">Тел.:</span>
+        <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
       </div>
       <div class="footer-social-copyright">
         <div class="footer-social">
