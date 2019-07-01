@@ -23,16 +23,10 @@
           </a>
           <section class="user-navigation">
             <form class="search-form" action="#" method="post">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-              <path d="M15.7,14.3l-3.104-3.104C13.473,10.023,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7
-              	c1.576,0,3.023-0.527,4.193-1.404L14.3,15.7c0.185,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.945,14.546,15.7,14.3z
-              	 M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/>
-              </svg>
-              <label>
-                <input type="search" name="search" placeholder="Поиск по сайту">
-              </label>
-              <button type="submit">Найти</button>
+
+              <label for="search-field"></label>
+                <input class="search-field-input" id="search-field" type="search" name="search" placeholder="Поиск по сайту">
+              <button class="search-form-button" type="submit">Найти</button>
             </form>
             <ul class="user-navigation-list">
               <li><a class="logout-link-nav-icon">
@@ -44,7 +38,7 @@
               </a></li>
               <li><a class="user-name-nav" href="#">Валентин Петухов</a></li>
               <li><a  class="logout-link-nav" href="login.html">Выйти</a></li>
-              <li><a class="compare-nav-icon">
+              <li><a class="inner-compare-nav-icon">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
                 <rect x="8" y="2" width="1.984" height="8"/>
@@ -53,7 +47,7 @@
                 </svg>
               </a></li>
               <li><a class="compare-nav"href="#">Сравнить</a></li>
-              <li><a class="basket-nav-icon">
+              <li><a class="inner-basket-nav-icon">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                    width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
                 <g>
@@ -100,7 +94,7 @@
           <h2>Фильтр:</h2>
           <form class="filter" action="#" method="get">
             <fieldset class="filter-item">
-              <legend>Стоимость</legend>
+              <legend class="filter-price">Стоимость</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -110,19 +104,19 @@
                     <div class="toggle toggle-max"></div>
                 </div>
                 <span class="price-controls">
-                  <label class="min-price">от 0</label>
-                  <label class="max-price">до 5000</label>
+                  <label class="min-price">от <input name="min-price" type="text" value="0"</label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"</label>
                 </span>
 
               </div>
 
             </fieldset>
             <fieldset class="filter-item">
-              <legend>Цвет</legend>
+              <legend class="filter-color">Цвет</legend>
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="filter-black" checked>
-                  <label for="filter-black">Черный</label>
+                  <label class="l-b" for="filter-black">Черный</label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="filter-white">
@@ -143,7 +137,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-item">
-              <legend>Bluetooth</legend>
+              <legend class="filter-bluetooth">Bluetooth</legend>
               <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-radio"
@@ -170,12 +164,12 @@
             </ul>
             <ul class="sort-item-range">
               <li>
-                <a class="sort-item-up sort-item-active" href="#">
+                <a class="sort-item-up " href="#">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
               <li>
-                <a class="sort-item-down" href="#">
+                <a class="sort-item-down sort-item-active" href="#">
               <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
@@ -209,7 +203,7 @@
                   </a>
                 </p>
                 <div class="index-item-price">
-                  <h3>
+                  <h3 class="prof-selfie">
                     <a href="catalog-item.html">Профессиональная селфи-палка
                    </a>
                   </h3>
@@ -245,7 +239,7 @@
                     </a>
                   </p>
                   <div class="index-item-price">
-                    <h3>
+                    <h3 class="selfie-stick-item">
                       <a href="catalog-item.html">Селфи-палка «Следуй за мной»
                      </a>
                     </h3>
@@ -258,7 +252,7 @@
               </li>
             </ul>
             <ul class="pagination-list">
-              <li class="pagination-item"><a>Назад</a></li>
+              <li class="pagination-item text-back"><a>Назад</a></li>
               <li>
                 <ul class="numbers">
                   <li class="pagination-item-number pagination-item-current"><a>1</a></li>
@@ -266,13 +260,14 @@
                   <li class="pagination-item-number"><a href="#">3</a></li>
                 </ul>
               </li>
-              <li class="pagination-item text"><a href="#">Вперед</a></li>
+              <li class="pagination-item text-up"><a href="#">Вперед</a></li>
             </ul>
           </section>
         </div>
       </div>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
+      <div class="container">
       <div class="footer-logo-nav">
       <a class="main-footer-logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
@@ -292,9 +287,9 @@
             C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/>
           </svg>
         </a></li>
-        <li><a class="user-name" href="#">Валентин Петухов</a></li>
+        <li><a class="footer-user-name" href="#">Валентин Петухов</a></li>
         <li><a class="logout-link" href="index.html">Выйти</a></li>
-        <li><a class="compare-icon">
+        <li><a class="footer-compare-icon">
           <svg  fill="#ffc600" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="10px" height="10px" viewBox="0 0 10 10" enable-background="new 0 0 10 10" xml:space="preserve">
           <rect x="8" y="2" width="1.984" height="8"/>
@@ -302,8 +297,8 @@
           <rect x="4" width="2" height="10"/>
           </svg>
         </a></li>
-        <li><a class="compare" href="#">Сравнить</a></li>
-        <li><a class="basket-nav-icon">
+        <li><a class="footer-compare" href="#">Сравнить</a></li>
+        <li><a class="footer-basket-icon">
           <svg fill="#ffc600" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="12px" height="12px" viewBox="0 0 12 12" enable-background="new 0 0 12 12" xml:space="preserve">
           <g>
@@ -317,17 +312,18 @@
           </g>
           </svg>
         </a></li>
-        <li><a class="basket" href="#">Корзина</a></li>
+        <li><a class="footer-basket" href="#">Корзина</a></li>
       </ul>
     </div>
-    <div class="index-adress-nav">
+    <div class="footer-index-adress">
       <p class="address">г. Москва, ул. Строителей, 15</p>
         <ul class="footer-navigation-item">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="footer-delivery"><a href="#">Доставка</a></li>
+          <li class="footer-service"><a href="#">Гарантия</a></li>
+          <li class="footer-contacts"><a href="#">Контакты</a></li>
         </ul>
-        <a class="phone" href="tel:+74954959595">+7 495 495-95-95</a>
+        <span class="tel">Тел.:</span>
+        <a class="phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
       </div>
       <div class="footer-social-copyright">
       <div class="footer-social">
@@ -375,6 +371,7 @@
       <p class="footer-copyright">
         <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </p>
+    </div>
     </div>
     </footer>
   </body>
