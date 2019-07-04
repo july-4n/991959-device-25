@@ -1890,15 +1890,17 @@ opacity: 0.4;
 .phone {
   color: #ffffff;
 }
-.footer-login-link-icon svg:hover,
-.footer-compare-icon svg:hover,
-.footer-basket-icon svg:hover {
+.footer-login-link-icon:hover,
+.logout-link-icon-icon:hover,
+.footer-compare-icon:hover,
+.footer-basket-icon:hover {
   opacity: 0.6;
 }
 .footer-login-link-icon a:active,
+.logout-link-icon a:active,
 .footer-compare-icon a:active,
 .footer-basket-icon a:active {
-  fill: rgba(255, 198, 0, 0.3);
+  opacity: 0.3;
 }
 .footer-login-link,
 .footer-user-name,
