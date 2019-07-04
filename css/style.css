@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Gilroyextrabold";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
@@ -1164,7 +1165,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 }
 .filters h2,
 .sort h2 {
-  padding: 11px 0;
+  padding: 10px 0;
   font-family: "Gilroyextrabold", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1176,16 +1177,17 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   margin-bottom: 79px;
   margin-top: -10px;
   position: relative;
-  padding-top: 24px;
+  padding-top: 33px;
   padding-bottom: 24px;
   padding-left: 61px;
-  background-color:#dcdcdc;
 }
 .filters {
   position: relative;
   width: 328px;
-  margin-top: 24px;
-  background-color: #efefef;
+  margin-top: 14px;
+  background: -webkit-linear-gradient(#dcdcdc 71px, #efefef 71px);
+  background: -o-linear-gradient(#dcdcdc 71px, #efefef 71px);
+  background: linear-gradient(#dcdcdc 71px, #efefef 71px);
 }
 .filters::after {
   content: "";
@@ -1196,18 +1198,9 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   left: 0;
   margin-left: calc(50% - 50vw);
   z-index: -2;
-  background-color: #efefef;
-}
-.filters h2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-left: calc(50% - 50vw);
-  z-index: -1;
-  background-color: #dcdcdc;
+  background: -webkit-linear-gradient(#dcdcdc 71px, #efefef 71px);
+  background: -o-linear-gradient(#dcdcdc 71px, #efefef 71px);
+  background: linear-gradient(#dcdcdc 71px, #efefef 71px);
 }
 .fiter-item {
   position: relative;
@@ -1225,8 +1218,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   content: "";
   position: absolute;
   display: block;
-  top: -12px;
-  left: 1px;
+  top: -11px;
+  left: 2px;
   width: 201px;
   height: 2px;
   background-color: #000000;
@@ -1235,8 +1228,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   content: "";
   position: absolute;
   display: block;
-  top: 18px;
-  left: 1px;
+  top: 17px;
+  left: 2px;
   width: 201px;
   height: 2px;
   background-color: #000000;
@@ -1245,8 +1238,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   content: "";
   position: absolute;
   display: block;
-  top: 7px;
-  left: 1px;
+  top: 6px;
+  left: 2px;
   width: 201px;
   height: 2px;
   background-color: #000000;
@@ -1254,7 +1247,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 .range-filter {
   position: relative;
   width: 202px;
-  margin-top: 29px;
+  margin-top: 31px;
 }
 .range-controls {
   margin-bottom: 10px;
@@ -1314,7 +1307,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 }
 
 .filter-bluetooth {
-  padding-top: 19px;
+  padding-top: 18px;
 }
 .filter ul {
   list-style: none;
@@ -1329,8 +1322,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -40px;
+  top: 7px;
+  left: -39px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -1340,8 +1333,8 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -40px;
+  top: 7px;
+  left: -39px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
@@ -1409,7 +1402,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   display: block;
   width: 139px;
   margin-top: 14px;
-  margin-left: 90px;
+  margin-left: 92px;
   font-family: "Gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1427,7 +1420,7 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   position: absolute;
   display: block;
   top: 30%;
-  left: -32px;
+  left: -33px;
   width: 200px;
   height: 8px;
   z-index: -1;
@@ -1540,7 +1533,7 @@ opacity: 0.4;
           align-items: baseline;
   max-width: 358px;
   padding-top: 24px;
-  padding-bottom: 45px;
+  padding-bottom: 46px;
 }
 .catalog-list {
   display: -webkit-box;
