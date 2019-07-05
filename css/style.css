@@ -216,13 +216,14 @@ input:ms-input-placeholder                             {color:rgba(0, 0, 0, 1);}
 .site-navigation a:hover,
 .login-link-nav:hover,
 .login-link-nav-icon:hover,
+.logout-link-nav:hover,
 .compare-nav:hover,
 .compare-nav-icon:hover,
 .basket-nav:hover,
 .basket-nav-icon:hover {
   opacity: 0.6;
 }
-..site-navigation a:active,
+.site-navigation a:active,
 .logout-link-nav:active,
 .compare-nav:active,
 .basket-nav:active {
@@ -904,6 +905,9 @@ input[id="product-3"]:checked ~ .slider-controls .slider-controls-item--3::befor
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.no-color {
+  opacity: 0.2;
 }
 .popular-manufacturers-first-color,
 .popular-manufacturers-second-color,
